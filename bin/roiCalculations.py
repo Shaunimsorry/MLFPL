@@ -19,7 +19,7 @@ cleaned2020Data = pd.read_csv('../data/2020-21/cleaned_players.csv', header=0)
 cleaned2019Data = pd.read_csv('../data/2019-20/cleaned_players.csv')
 cleaned2018Data = pd.read_csv('../data/2018-19/cleaned_players.csv')
 cleaned2017Data = pd.read_csv('../data/2017-18/cleaned_players.csv')
-cleaned2016Data = pd.read_csv('../data/2016-17/cleaned_players_v1.csv', encoding='windows-1252')
+cleaned2016Data = pd.read_csv('../data/2016-17/cleaned_players.csv', encoding='windows-1252')
 print ('PlayerData Loaded')
 
 #import 2020 raw player data
@@ -53,4 +53,6 @@ print ("Finished Setting Up Player List")
 #Setupthe Dataframe
 dataFrame = pd.DataFrame(newDatabase)
 print (dataFrame)
+
+print(cleaned2020Data.loc[5])
 
